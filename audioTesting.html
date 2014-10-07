@@ -1,0 +1,59 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 
+This is a skeleton html file that you can use to get you started on each new 
+HTML project
+
+Name: Your Name Here
+Class: CIS 3303
+Section: x
+-->
+<html>
+
+<head>
+<title>Music Players</title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+function go_get(){
+ var base_url = 'http://www.youtube.com/embed?listType=search&list=' ;
+ var search_field = document.getElementById('yourtextfield').value ;
+ var target_url = base_url + search_field ;
+ var ifr = document.getElementById('youriframe') ;
+ ifr.src = target_url ;
+ return false ;
+ }
+ 
+
+</script> 
+
+
+<iframe id="youriframe" width="500" height="500" ></iframe>
+
+<form onsubmit="go_get(); return false;" >
+ <input type="text"  id="yourtextfield"/>
+ <input type="submit" value="Search Playlists" />
+</form>
+
+<br/>
+
+
+<iframe width="400" height="100" src="https://rd.io/i/xl7A0ystIEVg0w/" frameborder="0"></iframe>
+
+</br></br>
+
+
+<iframe src="https://embed.spotify.com/?uri=spotify:user:richco01:starred" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+
+<br/>
+
+<iframe src="https://embed.spotify.com/?uri=spotify:track:2ihCaVdNZmnHZWt0fvAM7B" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+
+<br/>
+
+</body>
+</html>
